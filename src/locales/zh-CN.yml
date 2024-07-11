@@ -1,0 +1,24 @@
+coolDown: 草群友的冷却时间(秒)
+blacklist: 群聊黑名单,格式为 平台:群组ID ,如 onebot:1234567890
+toggleCoolDown: 用户功能开关冷却时间(秒)
+
+commands:
+  ggf:
+    description: "草群友"
+    messages:
+      members-too-few: 没有群友可草……
+      success: "{quote}成功草到了 {targetName}({targetId}) {avatar}"
+      coolDown: 请等待 {0} 秒后再使用“草群友”指令！！
+      disable-success: 👌
+      enable-success: 👌
+      disabled: 你不想被草还想草别人？
+  ggf-on:
+    description: "不想被草"
+    messages:
+      success: 👌
+      toggle-coolDown: 请等待 {0} 秒后再切换状态！！
+  ggf-off:
+    description: "又想被草"
+    messages:
+      success: 👌
+      toggle-coolDown: 请等待 {0} 秒后再切换状态！！
