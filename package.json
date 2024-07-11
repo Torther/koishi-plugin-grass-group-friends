@@ -1,20 +1,38 @@
 {
   "name": "koishi-plugin-grass-group-friends",
   "description": "一个可以艹群友的插件",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "contributors": [
+    "Torther <i@mol.ink>"
+  ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
-  "license": "MIT",
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
+  "homepage": "https://github.com/Torther/koishi-plugin-grass-group-friends",
+  "license": "The Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torther/koishi-plugin-grass-group-friends.git"
+  },
   "peerDependencies": {
     "koishi": "^4.17.9"
+  },
+  "koishi": {
+    "description": {
+      "zh": "一个可以艹群友的插件"
+    },
+    "service": {
+      "required": [
+        "cache"
+      ]
+    }
   }
 }
