@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-grass-group-friends",
   "description": "一个可以艹群友的插件",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "contributors": [
     "Torther <i@mol.ink>"
   ],
