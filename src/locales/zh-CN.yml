@@ -4,21 +4,29 @@ toggleCoolDown: 用户功能开关冷却时间(秒)
 
 commands:
   ggf:
-    description: "草群友"
+    description: "随机草群友"
     messages:
-      members-too-few: 没有群友可草……
+      members-too-few: "群内没有可草的对象……"
       success: "{quote}成功草到了 {targetName}({targetId}) {avatar}"
-      coolDown: 请等待 {0} 秒后再使用“草群友”指令！！
-      disable-success: 👌
-      enable-success: 👌
-      disabled: 你不想被草还想草别人？
+      coolDown: "请等待 {0} 秒后再使用草群友指令！"
+      disabled: "你不想被草还想草别人？"
   ggf-on:
-    description: "不想被草"
+    description: "开启被草功能"
     messages:
-      success: 👌
-      toggle-coolDown: 请等待 {0} 秒后再切换状态！！
+      success: "已开启被草功能 👌"
+      toggle-coolDown: "请等待 {0} 秒后再切换状态！"
   ggf-off:
-    description: "又想被草"
+    description: "关闭被草功能"
     messages:
-      success: 👌
-      toggle-coolDown: 请等待 {0} 秒后再切换状态！！
+      success: "已关闭被草功能 👌"
+      toggle-coolDown: "请等待 {0} 秒后再切换状态！"
+  ggf-at:
+    description: "指定草群友"
+    messages:
+      members-too-few: "找不到指定的群友或该群友已关闭被草功能……"
+      success: "{quote}成功草到了 {targetName}({targetId}) {avatar}"
+      coolDown: "请等待 {0} 秒后再使用草群友指令！"
+      disabled: "你不想被草还想草别人？"
+      invalid-target: "请指定要草的对象！"
+      target-not-found: "找不到指定的群友……"
+      target-disabled: "该群友已关闭被草功能……"
