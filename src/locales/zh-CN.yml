@@ -4,29 +4,34 @@ toggleCoolDown: 用户功能开关冷却时间(秒)
 
 commands:
   ggf:
-    description: "随机草群友"
+    description: 随机草一位群友
     messages:
-      members-too-few: "群内没有可草的对象……"
       success: "{quote}成功草到了 {targetName}({targetId}) {avatar}"
-      coolDown: "请等待 {0} 秒后再使用草群友指令！"
-      disabled: "你不想被草还想草别人？"
+      error: "呜呜呜出错了，让我休息一下再试试吧~"
+      disabled: "诶？你都把自己藏起来了，不让别人草你，现在想草别人？(。_。)"
+      noMembers: "群里一个人都没有，草谁啊……(；′⌒`)"
+      noValidTarget: "诶？大家都把自己藏起来了，找不到可以草的群友呢~ (。﹏。*)"
+      coolDown: "别急别急，你刚刚才草过群友，再等 {0} 秒吧~ (｡･ω･｡)"
   ggf-on:
-    description: "开启被草功能"
+    description: 开启被草功能
     messages:
-      success: "已开启被草功能 👌"
-      toggle-coolDown: "请等待 {0} 秒后再切换状态！"
+      enableSuccess: "已经把你放出来啦！现在别人可以草你了哦~ (｡･ω･｡)ﾉ"
+      error: "呜呜呜出错了，让我休息一下再试试吧~"
+      alreadyEnabled: "你已经在外面啦，不用重复开启的说~ (。・ω・。)"
+      coolDown: "诶诶，你刚刚才切换过状态，再等 {0} 秒吧~ (｡･ω･｡)"
   ggf-off:
-    description: "关闭被草功能"
+    description: 关闭被草功能
     messages:
-      success: "已关闭被草功能 👌"
-      toggle-coolDown: "请等待 {0} 秒后再切换状态！"
+      disableSuccess: "好啦，我把你藏起来啦！现在别人草不到你了哦~ (｡･ω･｡)ﾉ"
+      error: "呜呜呜出错了，让我休息一下再试试吧~"
+      alreadyDisabled: "你已经藏得好好的了，不用重复关闭啦~ (。・ω・。)"
+      coolDown: "诶诶，你刚刚才切换过状态，再等 {0} 秒吧~ (｡･ω･｡)"
   ggf-at:
-    description: "指定草群友"
+    description: 草指定群友
     messages:
-      members-too-few: "找不到指定的群友或该群友已关闭被草功能……"
       success: "{quote}成功草到了 {targetName}({targetId}) {avatar}"
-      coolDown: "请等待 {0} 秒后再使用草群友指令！"
-      disabled: "你不想被草还想草别人？"
-      invalid-target: "请指定要草的对象！"
-      target-not-found: "找不到指定的群友……"
-      target-disabled: "该群友已关闭被草功能……"
+      error: "呜呜呜出错了，让我休息一下再试试吧~"
+      disabled: "诶？你都把自己藏起来了，不让别人草你，现在想草别人？(。_。)"
+      targetDisabled: "那个人把自己藏起来了，不让别人草呢~ (。﹏。*)"
+      invalidTarget: "诶？找不到你说的那个人呢~ (。﹏。*)"
+      coolDown: "别急别急，你刚刚才草过群友，再等 {0} 秒吧~ (｡･ω･｡)"
